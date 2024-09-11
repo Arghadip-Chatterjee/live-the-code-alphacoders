@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Question and answer are required.' }, { status: 400 });
     }
 
-    const response = await fetch('http://127.0.0.1:8000/submit-answer', {
+    const response = await fetch('https://live-the-code-alphacoders-backend.onrender.com/submit-answer', {
       method: 'POST',
       body: new URLSearchParams({ question, answer }),
       headers: {

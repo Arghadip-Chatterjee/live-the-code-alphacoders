@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   try {
     // Replace this URL with the actual URL of your FastAPI endpoint
-    const response = await fetch('http://localhost:8000/get-next-question');
+    const response = await fetch('https://live-the-code-alphacoders-backend.onrender.com/get-next-question');
 
     if (!response.ok) {
       const errorData = await response.json();
